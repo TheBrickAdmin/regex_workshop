@@ -2,6 +2,7 @@
 Make sure you are in the workshop1 directory to make sure relative paths work correctly.
 
 ## 1. Extract all IPv4 addresses
+
 File: `samples/server.log`
 
 **Python:** Replace `YOUR_REGEX_HERE` with your pattern
@@ -24,6 +25,7 @@ $matches | ForEach-Object { $_.Value }
 
 ## 2. Validate product codes
 Match only valid codes: 3 uppercase letters, hyphen, 4 digits. Example valid: `ABC-1234`
+
 File: `samples/products.txt`
 
 **Python:** Replace `YOUR_REGEX_HERE` with your pattern
@@ -46,6 +48,7 @@ $matches | ForEach-Object { $_.Value }
 
 ## 3. Remove all comments from config files
 Delete lines starting with `#`
+
 File: `samples/config.ini`
 
 **Python:** Replace `YOUR_REGEX_HERE` with your pattern
@@ -66,6 +69,7 @@ $content | Where-Object { $_ -notmatch 'YOUR_REGEX_HERE' }
 
 ## 4. Convert date format
 From `DD/MM/YYYY` to `YYYY-MM-DD`. Perform a regex-based replacement.
+
 File: `samples/dates.txt`
 
 **Python:** Replace `YOUR_REGEX_HERE` with your pattern and `YOUR_REPLACEMENT_HERE` with your replacement
@@ -87,6 +91,7 @@ $content -replace $pattern, $replacement
 
 ## 5. Match filenames ending in `.log`
 Find only log filenames
+
 File: `samples/server.log`
 
 **Python:** Replace `YOUR_REGEX_HERE` with your pattern
