@@ -54,12 +54,3 @@ re.sub(r'(\d{2})\/(\d{2})\/(\d{4})', r'\3-\2-\1', text)
 \.log$
 ```
 </details>
-
-## Bonus: WARN but not DEBUG
-<details><summary>Hint</summary>Use a negative lookahead at the start.</details>
-<details><summary>Answer</summary>
-
-```
-^(?!.*DEBUG).*WARN.*
-```
-</details>

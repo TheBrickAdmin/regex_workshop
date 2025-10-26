@@ -14,5 +14,3 @@
 
 5. **Match filenames ending in `.log`**  
    Find only log filenames in `samples/server.log`.
-
-**Bonus**: Find lines containing `WARN` but **not** `DEBUG`.
