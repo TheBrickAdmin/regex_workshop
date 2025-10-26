@@ -1,0 +1,6 @@
+noise
+BEGIN
+line 1
+line 2
+END
+tail

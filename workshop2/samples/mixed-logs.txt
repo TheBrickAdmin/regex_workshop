@@ -1,0 +1,5 @@
+2025-10-26 09:00:01 DEBUG Starting worker
+2025-10-26 09:01:02 INFO User login (id=42)
+2025-10-26 09:02:03 ERROR Disk full
+2025-10-26 09:03:04 DEBUG ERROR This is a debugged error
+2025-10-26 09:04:05 WARN Low memory (threshold=10%)

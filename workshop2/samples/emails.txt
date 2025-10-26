@@ -1,0 +1,5 @@
+alice@example.com
+bob.smith@corp.local
+root@localhost
+first.last+tag@sub.domain.co.uk
+This is not an email @ sign

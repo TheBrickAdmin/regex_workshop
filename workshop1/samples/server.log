@@ -1,0 +1,7 @@
+10.0.0.1 - GET /index.html
+192.168.1.25 - ERROR - Something failed
+# This line is not processed
+INFO Opening file test.log
+WARN Backup server unreachable
+ERROR Could not connect to 172.16.0.9
+app.log Rotating...
