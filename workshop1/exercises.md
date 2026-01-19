@@ -1,6 +1,44 @@
 # Workshop 1 — Regex Fundamentals Exercises
 Make sure you are in the workshop1 directory to make sure relative paths work correctly.
 
+## Regex Syntax Recap
+
+### Character Classes
+- `.` — any character except newline
+- `\d` — digit 0–9
+- `\D` — not digit
+- `\w` — word char: letters, digits, _
+- `\W` — not word char
+- `\s` — whitespace
+- `\S` — not whitespace
+
+### Anchors
+- `^` — start of string/line
+- `$` — end of string/line
+- `\b` — word boundary
+
+### Character Sets
+- `[a-z]` — lowercase letters
+- `[A-Z]` — uppercase letters
+- `[0-9]` — digits
+- `[^abc]` — NOT a, b, or c
+
+### Quantifiers
+- `?` — zero or one
+- `*` — zero or more
+- `+` — one or more
+- `{n}` — exactly n
+- `{n,}` — at least n
+- `{n,m}` — between n and m
+
+### Greedy vs. Lazy
+- Greedy: `".+"`
+- Lazy: `".+?"`
+
+### Anchor Examples
+- `^ERROR` — line starts with ERROR
+- `WARN$` — line ends with WARN
+
 ## 1. Extract all IPv4 addresses
 
 File: `samples/server.log`
