@@ -11,9 +11,18 @@ Make sure you are in the workshop3 directory to make sure relative paths work co
 - `(?!...)` — negative lookahead
 
 ### Flags/Modifiers
-- `re.MULTILINE` or `(?m)` — `^` and `$` match line boundaries
-- `re.DOTALL` or `(?s)` — `.` matches newlines too
-- `re.IGNORECASE` or `(?i)` — case-insensitive matching
+- **Multiline:** `^` and `$` match line boundaries
+  - Python: `re.MULTILINE` or inline `(?m)`
+  - Bash: `grep -E` (default line-by-line) or `grep -Pz` for null-delimited multiline
+  - PowerShell: `[System.Text.RegularExpressions.RegexOptions]::Multiline` or inline `(?m)`
+- **Dotall/Singleline:** `.` matches newlines too
+  - Python: `re.DOTALL` or inline `(?s)`
+  - Bash: `grep -Pz` with PCRE or inline `(?s)` with `-P`
+  - PowerShell: `[System.Text.RegularExpressions.RegexOptions]::Singleline` or inline `(?s)`
+- **Case-insensitive:** ignore case when matching
+  - Python: `re.IGNORECASE` or inline `(?i)`
+  - Bash: `grep -i` or inline `(?i)` with `-P`
+  - PowerShell: `[System.Text.RegularExpressions.RegexOptions]::IgnoreCase` or inline `(?i)` or `-match` operator is case-insensitive by default
 
 ### Character Classes
 - `.` — any character except newline
