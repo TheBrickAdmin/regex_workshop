@@ -31,7 +31,16 @@ IPv6 (compressed forms tolerated, pragmatic):
 ```
 \b[0-9A-Fa-f:]{2,}\b
 ```
-Discussion: strict validation becomes complex; prefer parsing libraries in production.
+</details>
+
+<details><summary>Better Answer</summary>
+
+IPv6 with proper segment structure (handles `::` compression):
+```
+([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:)*:([0-9a-fA-F]{1,4}:)*[0-9a-fA-F]{1,4}
+```
+
+Discussion: Full IPv6 validation is extremely complex (mixed notation, link-local, etc.). For production, prefer parsing libraries or dedicated validators.
 </details>
 
 ## 4) Multiline block extract
