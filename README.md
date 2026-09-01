@@ -21,12 +21,12 @@ Participants can use **any** of the following:
 
 Each workshop folder includes:
 - `exercises.md` (assignments)
-- `answers.md` (hints + slow reveal)
+- `answers/answers.md` (hints + slow reveal)
 - `samples/` input data files
 
 ## ✅ Completion
 
-Each workshop finishes with a challenge exercise.
+Each workshop finishes with a challenging exercise.
 
 ---
 
